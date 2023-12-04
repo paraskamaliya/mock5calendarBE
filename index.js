@@ -7,7 +7,7 @@ require("dotenv").config();
 
 app.use(express.json());
 app.use(cors())
-app.use("/users", userRouter);
+app.use("/contacts", userRouter);
 app.get("/", (req, res) => {
     res.end("Welcome")
 })
